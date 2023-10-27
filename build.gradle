@@ -24,7 +24,7 @@ shadowJar  {
 }
 
 launch4j {
-  //outfile = 'Raccoon-' +version +'.exe'
+  outfile = 'Raccoon-' + project.version +'.exe'
   mainClassName = 'de.onyxbits.raccoon.Main'
   jvmOptions = [ "-Dswing.defaultlaf=com.sun.java.swing.plaf.windows.WindowsLookAndFeel", "-Djava.net.preferIPv4Stack=true" ]
   jarTask = project.tasks.shadowJar
